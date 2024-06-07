@@ -41,7 +41,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
                 }
                 DB.closeResultSet(rs);
             }else {
-                throw new DbException("Erreur de insertion");
+                throw new DbException("Unexpected error! No rows affected!");
             }
 
         } catch (SQLException e){
